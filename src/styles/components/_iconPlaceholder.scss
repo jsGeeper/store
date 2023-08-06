@@ -1,0 +1,17 @@
+#iconPlaceholder{
+  width:2.4rem;
+  height:2.4rem;
+  border-radius:50%;
+  border: none;
+  position:relative;
+  display:inline-block;
+  margin: 0 auto;
+  @include makeFlex(row, center,center);
+  & span{
+    width:70%;
+    height:70%;
+    background:green;
+    border-radius:50%;
+    @include makeFlex(column, center, center);
+  }
+}

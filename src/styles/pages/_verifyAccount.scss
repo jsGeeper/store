@@ -1,0 +1,12 @@
+#verifyAccount{
+
+  & .formContainer {
+    margin: 4rem 0;
+  }
+
+  & .passwordVerify__footer {
+    margin: 3rem 0;
+    @include makeFlex(column, center, center);
+
+  }
+}

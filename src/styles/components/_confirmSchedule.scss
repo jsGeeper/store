@@ -1,0 +1,34 @@
+#confirmSchedule {
+  & .verification {
+    & .title {
+      //   margin-bottom: 2.5rem;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      font-weight: 600;
+    }
+
+    & .schedule-info {
+      & li {
+        @include makeFlex(row, flex-start, center);
+        list-style: none;
+        margin-bottom: 1.2rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        & .icon {
+          width: 2.4rem;
+          height: 2.4rem;
+          margin-right: 1.6rem;
+        }
+
+        & span {
+          color: $color-text-dark;
+          font-size: 1.4rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.stepper {
+  & .steps {
+    & .step {
+      margin-bottom: 0;
+      padding: 0;
+    }
+  }
+
+  & .css-1pe7n21-MuiStepConnector-root {
+    margin-left: 7px;
+  }
+
+  & .css-qivjh0-MuiStepLabel-label {
+    font-size: 1.3rem;
+  }
+
+  & .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+    color: transparent;
+    border: 2px solid $color-borderColor;
+    border-radius: 50%;
+    padding: 0.17rem;
+    margin: 0;
+
+    &-active {
+      border-color: $color-success;
+    }
+  }
+
+  // stepper active step dot
+  & .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+    color: $color-success;
+  }
+
+  // stepper divider
+  & .css-8t49rw-MuiStepConnector-line {
+    min-height: 1.4rem;
+    border-left: 1px solid $color-borderColor;
+  }
+
+  // stepper text
+  & .css-qivjh0-MuiStepLabel-label.Mui-active {
+    color: $color-success;
+    font-weight: 700;
+  }
+
+  // stepper completed
+  .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+    color: $color-success;
+    padding: 0;
+}
+}

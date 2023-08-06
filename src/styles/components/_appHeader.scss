@@ -1,0 +1,72 @@
+.appHeader {
+  @include makeFlex(row, space-between, center);
+
+  &__nav {
+    @include makeFlex(row, space-between, center);
+
+    &--notification {
+      flex: 1;
+      margin-right: 1.5rem;
+    }
+
+    &__user {
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 0.1rem 0.2rem rgba(16, 24, 40, 0.05);
+      background-color: $color-success-light;
+      @include makeFlex(row, center, center);
+        border-radius: $checkbox-radius;
+      padding: 0.5rem 1rem;
+
+      &-avatar {
+        margin-right: 0.7rem;
+      }
+
+      &-details{
+        @include makeFlex(column, flex-start, flex-start);
+        margin: 0 .7rem;
+        text-align: left;
+
+        & .caret {
+            margin: 0 0.5rem;
+        }
+      }
+    }
+
+    &__popover{
+      box-shadow: 1px 1px 7px -1px rgba(0,0,0,0.4);
+      -webkit-box-shadow: 1px 1px 7px -1px rgba(0,0,0,0.4);
+      -moz-box-shadow: 1px 1px 7px -1px rgba(0,0,0,0.4);
+        background-color: white !important;
+        border-radius: $checkbox-radius;
+    }
+
+    &__popover-content{
+      @include makeFlex(column, flex-start, flex-start);
+      box-shadow: 0 0.1rem 0.2rem rgba(16, 24, 40, 0.05);
+      text-align: left;
+        padding: 0.5rem 0;
+
+      &-menuWrap{
+        @include makeFlex(column, flex-start, flex-start);
+      }
+
+      &__item {
+        color: $dropdown-text-color;
+        font-size: 1.4rem;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: all 0.2s;
+        margin-bottom: 0.3rem;
+        cursor: pointer;
+
+        &:hover {
+          font-weight: 600;
+
+        }
+      }
+    }
+
+  }
+}

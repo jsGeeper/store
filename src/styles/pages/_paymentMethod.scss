@@ -1,0 +1,47 @@
+#paymentMethod {
+  & .paymentMethod {
+    &__wrapper {
+      @include makeFlex(row, flex-start, flex-start);
+      padding: 4.8rem 2.4rem;
+    }
+
+    &__stepper {
+      width: 32.6rem;
+    }
+
+    &__form {
+      flex: 1;
+
+      & .form__container {
+        margin-top: 2.5rem;
+      }
+
+      & .paymeentMethodCard {
+        width: 100%;
+        max-width: 46rem;
+      }
+
+      & .paymentMethodCard__form-title {
+        margin-bottom: 5rem;
+
+        & h2 {
+          color: #000;
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+
+        & p {
+          color: $color-gray;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          font-weight: 400;
+        }
+      }
+    }
+}
+& .footer-button {
+  float: right;
+  margin-top: 3rem;
+}
+}

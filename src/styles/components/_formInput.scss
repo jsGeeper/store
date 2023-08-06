@@ -1,0 +1,52 @@
+.formInput {
+  margin: 1.2rem 0;
+
+  &__subLabel {
+    font-size: 1.6rem;
+    color: $color-gray
+  }
+
+  &__wrapper {
+    position: relative;
+
+    & .select {
+      background-color: #fff;
+    }
+
+    & .input-field {
+      @include inputfield;
+      border: 1px solid $color-borderColor;
+      position: relative;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: $color-gray;
+        font-weight: 500;
+      }
+    }
+
+    & .input-field-error {
+      @include inputfield;
+      border: 1px solid $color-error;
+      position: relative;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    & .formInput__icon {
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      width: 1.5rem;
+      height: 1.5rem;
+      transform: translateY(-50%);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

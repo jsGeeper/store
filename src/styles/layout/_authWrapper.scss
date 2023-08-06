@@ -1,0 +1,40 @@
+.authWrapper {
+  height: 100vh;
+  width: 100%;
+  //min-width: 1440px;
+
+  display: grid;
+  grid-template-columns: 49.1rem auto;
+  grid-template-rows: auto 1fr;
+
+  &__image {
+    grid-row: 1 / -1;
+    grid-column: 1;
+    background-image: url("https://geeper-media.s3.amazonaws.com/Carousel+(1).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  }
+
+  & .authWrapper__content {
+    position: relative;
+    grid-row: 1 / -1;
+    grid-column: 2 / -1;
+    @include makeFlex(column, center, center);
+
+
+    & .authWrapper__logo {
+      position: absolute;
+      padding: 2rem 2rem 2rem 3rem;
+      align-self: normal;
+      top: 0;
+      width: 100%;
+    }
+
+    &__inner{
+      @include makeFlex(column, center, center);
+    }
+  }
+
+}

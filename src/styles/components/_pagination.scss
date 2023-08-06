@@ -1,0 +1,12 @@
+#pagination {
+ & .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+   background-color: $color-secondary;
+
+ }
+
+  & .css-10w330c-MuiButtonBase-root-MuiPaginationItem-root{
+    font-size: 1.4rem;
+    color: #667085;
+    font-weight: 500;
+  }
+}

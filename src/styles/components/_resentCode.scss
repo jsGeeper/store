@@ -1,0 +1,19 @@
+.resendCode {
+  margin: 2rem 0;
+    @include makeFlex(column, center, center);
+
+  & .resendCodeButton {
+    background: transparent;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-gray;
+    border: none;
+
+    & .timer {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $color-success-text;
+        font-style: normal;
+    }
+  }
+}

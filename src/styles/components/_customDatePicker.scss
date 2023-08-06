@@ -1,0 +1,20 @@
+#datePicker{
+    & .formInput__wrapper{
+        margin-bottom: 1.6rem;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+
+        & .datePicker__wrapper {
+            @include makeFlex(row, space-between, center);
+
+            & .formik-inputs{
+                width: 50%;
+            }
+        }
+
+
+    }
+}

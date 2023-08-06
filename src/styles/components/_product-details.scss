@@ -1,0 +1,58 @@
+#product-tab{
+  width: 100%;
+  max-width: 74.5rem;
+
+  & .intro-text {
+    & h5 {
+      color: $dropdown-text-color;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+    }
+
+    & span {
+      color: $color-gray;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      font-weight: 400;
+      display: block;
+    }
+  }
+
+  & .form-container {
+    margin-top: 2.5rem;
+
+    & .footer-button {
+      float: right;
+      margin-top: 3rem;
+    }
+
+    & .product-upload {
+      @include makeFlex(row, space-between, flex-start);
+      flex-wrap: wrap;
+    }
+
+    & .flexView {
+      @include makeFlex(row, space-between, flex-start);
+      flex-wrap: wrap;
+
+
+      & .selector {
+        flex: 1;
+      }
+    }
+    & .items-field, .price-field {
+      flex-wrap: nowrap;
+      align-items: center;
+
+
+      & .price-field-input {
+        flex: 1;
+      }
+
+      & .item-price-unit {
+        @include makeFlex(row, center, center);
+      }
+    }
+  }
+}

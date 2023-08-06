@@ -1,0 +1,42 @@
+.selectorAffixable {
+  positon: relative;
+  display: inline-block;
+  width: 100%;
+
+  &__form {
+    @include makeFlex(row, flex-start, center);
+    @include inputfield;
+    border: 1px solid $color-borderColor;
+    cursor: pointer;
+    gap: 0;
+
+
+    & .input {
+      flex: 1;
+      outline: none;
+      border: none;
+      cursor: pointer;
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  &__form__dropdown {
+    position: absolute;
+    margin-top: .5rem;
+    background-color: $color-white;
+    min-width: 460px;
+    //height: 224px;
+    box-shadow: 0 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+    padding: .5rem 1rem;
+    border: 1px solid #F2F4F7;
+    border-radius: .8rem;
+    z-index: 100;
+
+  }
+
+
+}

@@ -1,0 +1,41 @@
+#experience {
+  & .experience__wrapper {
+    @include makeFlex(row, flex-start, flex-start);
+    padding: 4.8rem 2.4rem;
+
+    & .experience__stepper {
+      width: 32.6rem;
+    }
+
+    & .experience__form {
+      flex: 1;
+
+      & .form__container {
+        margin-top: 2.5rem;
+      }
+
+      &-title {
+        margin-bottom: 5rem;
+
+        & h2 {
+          color: #000;
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+
+        & p {
+          color: $color-gray;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          font-weight: 400;
+        }
+      }
+
+      & .footer-button {
+        float: right;
+        margin-top: 3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+*{
+padding:0;
+margin: 0;
+box-sizing: border-box;
+}
+.success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    padding: 12px 10px;
+    border-radius: 4px;
+    margin: 10px 0;
+    width:100%;
+    font-size: 14px;
+}
+.error {
+    padding: 14px 10px;
+    background: #fee6e8;
+    border-radius: 4px;
+    color: #f74d5a;
+    margin: 10px 0;
+    text-align: center;
+    width:100%;
+    font-size: 14px;
+
+}

@@ -1,0 +1,95 @@
+#storeInit {
+
+  & .storeInit__wrapper {
+    @include makeFlex(row, flex-start, flex-start);
+    padding: 4.8rem 2.4rem;
+
+    & .storeInit__stepper {
+      width: 32.6rem;
+    }
+
+    & .storeInit__form {
+      flex: 1;
+
+      & .formwrap {
+        width: 100%;
+        max-width: 46rem;
+      }
+
+      & .form-container {
+        margin-top: 2.5rem;
+
+        & .intro-text {
+          //margin-bottom: 2rem;
+          & h5 {
+            color: $dropdown-text-color;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+          }
+
+          & span {
+            color: $color-gray;
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            font-weight: 400;
+            display: block;
+          }
+        }
+      }
+
+      &-title {
+        margin-bottom: 5rem;
+
+        & h2 {
+          color: #000;
+          font-weight: 700;
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+
+        & p {
+          color: $color-gray;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          font-weight: 400;
+        }
+      }
+
+
+      & .footer-button {
+        float: right;
+        margin-top: 3rem;
+      }
+
+      & .product-upload {
+        @include makeFlex(row, space-between, flex-start);
+        flex-wrap: wrap;
+      }
+
+      & .flexView {
+        @include makeFlex(row, space-between, flex-start);
+        flex-wrap: wrap;
+      }
+
+      & .items-field, .price-field {
+        flex-wrap: nowrap;
+        align-items: center;
+
+
+        & .price-field-input {
+          flex: 1;
+        }
+
+        & .item-price-unit {
+          @include makeFlex(row, center, center);
+        }
+      }
+
+      & .selector {
+        flex: 1;
+      }
+
+    }
+  }
+}

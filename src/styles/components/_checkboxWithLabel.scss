@@ -1,0 +1,29 @@
+.checkboxWithLabel {
+  transition: 0.2s all;
+  width: 100%;
+
+  & .optionStyle {
+    @include checkboxLabel;
+    background-color: $color-gray-light;
+    border-radius: $checkbox-radius;
+    // width: 100%;
+  }
+
+  & .selected {
+    @include checkboxLabel;
+    border: 1px solid $color-success;
+    background-color: $color-success-light;
+    border-radius: $checkbox-radius;
+    // width: 100%;
+  }
+
+
+  & .radio {
+    background-color: $color-primary;
+  }
+}
+
+.checkboxWithLabel__label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}

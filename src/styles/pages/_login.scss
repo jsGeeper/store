@@ -1,0 +1,15 @@
+#login {
+  & .login__form {
+    margin: 4rem 0;
+
+    & .login__footer {
+      @include makeFlex(column, center, center);
+      margin: 1rem 0;
+
+      & .footerText {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+}

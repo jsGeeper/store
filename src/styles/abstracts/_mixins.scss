@@ -1,0 +1,31 @@
+@mixin makeFlex($direction:row, $justify:stretch, $align:stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin checkboxLabel {
+  transition: 0.2s all;
+  width: 409px;
+  margin: 0 0 3.2rem;
+  padding: 2.2rem 1.5rem;
+}
+
+@mixin inputfield {
+  border-radius: .8rem;
+  padding: 1.4rem 2rem 1.4rem 1.4rem;
+  width: 100%;
+  gap: 8rem;
+  font-size: 1.6rem;
+  box-shadow: $input-shadow;
+}
+
+@mixin transition {
+  animation: fadeIn 0.3s ease-in-out;
+  -webkit-animation: fadeIn 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}

@@ -1,0 +1,18 @@
+#storeListing {
+
+  & .storeListing {
+
+    &__products {
+      margin: 2rem 0;
+
+      & .title {
+         & h3 {
+           color: $color-gray-darker;
+            font-size: 2.4rem;
+            font-weight: 600;
+            line-height: 3.2;
+         }
+      }
+    }
+  }
+}

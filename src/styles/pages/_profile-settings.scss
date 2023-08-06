@@ -1,0 +1,15 @@
+#profileSetting{
+
+  & .form-container {
+    width: 100%;
+    max-width: 46rem;
+
+    & .form-title {
+      font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 2.4rem;
+      color: $color-gray-darker;
+    }
+  }
+}

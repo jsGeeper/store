@@ -1,0 +1,57 @@
+.imageUpload {
+  & .label {
+    color: $dropdown-text-color;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 0;
+  }
+
+  & .uploadWrap {
+    @include makeFlex(row, flex-start, flex-start);
+
+    & .upload__preview {
+      height: 15rem;
+      width: 15rem;
+      border-radius: 0.8rem;
+      border: 1px solid $color-borderColor;
+      margin-right: 1.6rem;
+      overflow: hidden;
+      @include makeFlex(column, center, center);
+
+      & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    & .upload__control {
+      justify-self: unset;
+      flex: 1;
+      margin-top: .6rem;
+      // @include makeFlex(column, flex-start, flex-start);
+
+      // & #yourBtn{
+      //   opacity: 0;
+      //   position: absolute;
+      //   z-index: -1;
+      // }
+      & .uploadInput {
+        // display: none;
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+        // width: 0;
+      }
+
+      & .footer-text {
+        & span {
+         display: inline-block;
+          color: #98a2b3;
+          font-size: 1.4rem;
+          margin-top: .6rem;
+        }
+      }
+    }
+  }
+}

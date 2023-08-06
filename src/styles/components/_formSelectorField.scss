@@ -1,0 +1,59 @@
+.fotmSelector {
+  margin-bottom: 3.2rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  & .input-text {
+    margin: 1.2rem 0;
+
+    outline: none;
+    transition: 0.3s ease-in-out;
+    &::placeholder {
+      color: $color-gray;
+      font-weight: 500;
+    }
+  }
+
+  & .select {
+    background-color: #fff;
+  }
+
+  & .input-field {
+    @include inputfield;
+    position: relative;
+    padding: 0;
+    box-shadow: $input-shadow !important;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $color-gray;
+      font-weight: 500;
+    }
+  }
+
+  & .input-field-error {
+    @include inputfield;
+    padding: 0;
+    box-shadow: $input-shadow !important;
+    border: 1px solid $color-error;
+    overflow: hidden;
+    position: relative;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .css-1okebmr-indicatorSeparator {
+    width: 0;
+    box-sizing: border-box;
+  }
+
+  .css-6j8wv5-Input {
+    padding: 0.85rem 0;
+  }
+}

@@ -1,0 +1,16 @@
+.farmInfo {
+  width: 100%;
+  max-width: 46rem;
+
+  & .notice-txt {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  & .desc-error {
+    color: $color-gray;
+    font-size: 1.4rem;
+   @include makeFlex(column, flex-end, flex-end);
+  }
+}

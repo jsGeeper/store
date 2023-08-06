@@ -1,0 +1,37 @@
+.simpleButton {
+  outline: none;
+  border: 0;
+  background-color: $button-color;
+  color: $color-white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1rem 2.4rem;
+  margin: 0.9rem 0;
+  border-radius: $checkbox-radius;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    box-shadow: 0rem 0.1rem 0.2rem rgba(16, 24, 40, 0.05);
+  }
+
+  &:active {
+    box-shadow: 0rem 0.1rem 0.2rem rgba(16, 24, 40, 0.05);
+  }
+
+  //&:last-child {
+  //  margin-bottom: 0;
+  //}
+}
+
+.btn-outline-grey {
+  color: $dropdown-text-color;
+  background-color: transparent;
+  border: 1px solid $color-borderColor;
+  padding: 1rem 2.4rem;
+  margin: 0.9rem 0 0.9rem 1rem;
+  //margin-top: 0;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}

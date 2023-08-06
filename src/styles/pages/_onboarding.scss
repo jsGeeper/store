@@ -1,0 +1,4 @@
+.onboarding__form {
+  @include makeFlex(column, center, center);
+  margin: 3rem 0;
+}

@@ -1,0 +1,10 @@
+export { default as PersonalDetails } from './PersonalDetails';
+export { default as CertificationTab } from './CertificationTab';
+export { default as EducationTab } from './EducationTab';
+export { default as ExperienceTab } from './ExperienceTab';
+export { default as FarmDetail } from './FarmDetail';
+export { default as FundsAndSettlement } from './FundsAndSettlement';
+export { default as Preferences } from './Preferences';
+export { default as ProfessionalBio } from './ProfessionalBio';
+export { default as SecurityTab } from './SecurityTab';
+export { default as StoreDetails } from './StoreDetails';

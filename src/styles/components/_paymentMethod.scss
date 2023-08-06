@@ -1,0 +1,48 @@
+#paymentForm {
+  & .inputWithIcon {
+    @include makeFlex(row, flex-start, flex-start);
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.8rem;
+
+    & .img-fluid {
+      height: 2.2rem;
+      width: 3.4rem;
+      align-self: center;
+      display: block;
+      padding: 0.2rem;
+    }
+
+    & .card-number-input {
+      padding: 1.4rem 2rem 1.4rem 1.4rem;
+      border: none;
+
+      &:focus {
+        outline: none;
+        border: none;
+        outline-width: 0;
+      }
+
+      &:active {
+        outline: none;
+        border: none;
+      }
+
+      &::placeholder {
+        color: $color-gray;
+        font-weight: 500;
+      }
+    }
+  }
+
+  & .input-field {
+    border: 1px solid $color-borderColor;
+  }
+
+  & .input-field-error {
+    border: 1px solid $color-error;
+  }
+
+  & .flex-fields {
+    @include makeFlex(row, flex-start, center);
+  }
+}

@@ -1,0 +1,94 @@
+.is-open {
+  grid-template-columns: 10.6rem 1fr !important;
+  @include transition;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 26.7rem 1fr;
+  grid-template-rows: 8.4rem 1fr;
+  grid-template-areas: "sidenav header" "sidenav main";
+   height: 100vh;
+  @include transition;
+
+  & .header {
+    grid-area: header;
+    border-bottom: 1px solid $color-gray-light;
+    box-shadow: 0 0.1rem 0.2rem rgba(16, 24, 40, 0.05);
+    display: inline-grid;
+    padding: 0.5rem 1rem;
+    //position: sticky;
+    //top: 0;
+    //z-index: 1;
+    //background-color: #fff;
+  }
+
+  & .sidenav {
+    grid-area: sidenav;
+    border-right: 1px solid $color-gray-light;
+    box-shadow: 0 0.1rem 0.2rem rgba(16, 24, 40, 0.05);
+    padding: 0.5rem 3.2rem;
+    position: relative;
+    @include transition;
+    @include makeFlex(column);
+
+    &__controller {
+      position: absolute;
+      top: 7.2rem;
+      right: 8%;
+      height: 2.4rem;
+        width: 2.4rem;
+      @include transition;
+    }
+
+    &__header {
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+    }
+
+    &__navigation{
+      flex: 1;
+      position: relative;
+
+      &-topSection{
+        margin: 2rem 0;
+      }
+
+      &-middleSection{
+        margin: 2.5rem 0;
+
+      }
+
+        &-bottomSection{
+            margin: 2rem 0;
+        }
+
+      & .title {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    &__footer {
+      margin-top: 2rem;
+    }
+  }
+
+  & .main {
+    grid-area: main;
+    height: 100%;
+
+    & .main-content {
+      padding: .8rem;
+        height: 100%;
+    }
+  }
+
+  // uncomment layout for footer
+  //& .footer {
+  //  grid-area: footer;
+  //  background-color: #648ca6;
+  //}
+}
+
+
+
